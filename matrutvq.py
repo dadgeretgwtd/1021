@@ -1,4 +1,6 @@
+
 class Human :
+
 
     def __init__(self, Danya="Human", job=None, ):
         self.batiku_love =100
@@ -6,11 +8,7 @@ class Human :
         self.money = 100
         self.gladness = 50
         self.satiety = 50
-        self.job = job
-
-
-
-
+        self.school = job
 
 
     def get_school(self):
@@ -44,16 +42,26 @@ class Human :
 
             pass
 
-    def chill(self):
-        self.game
-        self.gladness += 10
-        self.home.mess += 5
-
-
     def clean_home(self):
         self.gladness -= 5
         self.home.mess = 0
 
+    def get_academi(self):
+        if self.have.money:
+            self.money -= 90
+            pass
+        else:
+            self.to_repair()
+            return
+            self.academi = academi(academi_list)
+
+    def wollking(self):
+        if self.have.friend:
+            self.drive.a.bike
+            self.gladness_more
+        else:
+            if self.dont.have.friend:
+                self.stay.at.home
 
 
 def day_indexes(self):
@@ -68,12 +76,22 @@ def live(self):
 
 
         class school:
-            def __init__(self, job_list):
-                self.job = (list(job_list))
-                self.salary = job_list[self.job]["salary"]
-                self.gladnes_less = job_list[self.job]["gladness_less"]
+            from random import randint
+            n=1
 
-            job_list = {
+            array=list()
+            for i in range(n):
+                array.append_(randint(1,2))
+                a=1
+                b=2
+                a=self.have.good.rating
+                b=self.have.bad.rating
+            def __init__(self, school_list):
+                self.job = (list(school_list))
+                self.salary = school_list[self.job]["salary"]
+                self.gladnes_less = school_list[self.job]["gladness_less"]
+
+            school_list = {
                 "history": {"salary": 50, "gladness_more": +10},
                 "english": {"salary": 40, "gladness_less": -1},
                 "Math": {"salary": 45, "gladness_less": -10000000000000000000000000000000000},
@@ -93,5 +111,15 @@ def live(self):
                 "played": {"gladness_more": 50},
                 "wollking": {"gladness_more": 100}}
 
+        class chill:
+            def __init__(self, chill_list):
+                self.job = (list(chill_list))
+                self.salary = chill_list[self.job]["salary"]
+                self.gladnes_less = chill_list[self.job]["gladness_less"]
 
-
+            chill_list = {
+                "plaing computer game": {"salary": 50, "gladness_more": +100},
+                "catch a wipe": {"salary": 40, "gladness_more": +30},
+                "sleep": {"salary": +50, "gladness_more": +10000000000000000000000000000000000000000000},
+                "watch YouTube": {"salary": 10, "gladness_more": +50},
+                        "wollking": {"gladness_more": 100}}
