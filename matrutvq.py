@@ -3,7 +3,7 @@ class Human :
 
 
     def __init__(self, Danya="Human", job=None, ):
-        self.batiku_love =100
+        self.parents_love =100
         self.name = Danya
         self.money = 100
         self.gladness = 50
@@ -14,17 +14,18 @@ class Human :
     def get_school(self):
      if self.have.money:
         self.money -= 90
-        pass
      else:
         self.to_repair()
         return
         self.school = school(school_list)
 
-
+    def chill(self):
+        self.gladness += 10
+        self.home.mess += 5
     def shopping(self, manage):
       if self.have.money:
         self.money -= 70
-        pass
+
       else:
 
         print("Купив їжу собаці")
@@ -34,13 +35,13 @@ class Human :
 
     def after_school(self):
         self.have.good.rating
-        self.batiku_love += 110
+        self.parents_love += 110
         self.have.bad.rating
-        self.batiku_love = 100
-        if self.batiku.love:
+        self.parents_love = 100
+        if self.parents.love:
             self.have.money = 80
 
-            pass
+
 
     def clean_home(self):
         self.gladness -= 5
@@ -49,11 +50,11 @@ class Human :
     def get_academi(self):
         if self.have.money:
             self.money -= 90
-            pass
         else:
             self.to_repair()
             return
             self.academi = academi(academi_list)
+
 
     def wollking(self):
         if self.have.friend:
@@ -72,7 +73,26 @@ def is_alive(self):
     pass
 
 
-def live(self):
+    def live(self):
+        if self.school is None:
+           print("я пішов у школу")
+           self.get_school
+        if self.academi is None:
+           print("я пішов у академію до собачки пайтон")
+           self.get_academi
+        if self.satiety +20:
+           print("Я йду їсти")
+           self.eat()
+        elif self.gladness +20:
+           print('Хочеться відпочити, але в будинку безлад, тому я буду прибирати')
+           self.clean_home()
+        elif self.chill():
+          print('Я відпочину')
+          self.chill()
+        if self.after_school is None:
+            print(print("я пішов з школу"))
+
+
 
 
         class school:
@@ -104,7 +124,7 @@ def live(self):
                 self.salary = job_list_new[self.job]["salary"]
                 self.gladnes_less = job_list_new[self.job]["gladness_less"]
 
-            job_list = {
+            dog_list = {
                 "eat corm": {"gladness_more": 40},
                 "scolded": {"gladness_less": 30},
                 "stroked": {"gladness_more": 25},
@@ -123,3 +143,38 @@ def live(self):
                 "sleep": {"salary": +50, "gladness_more": +10000000000000000000000000000000000000000000},
                 "watch YouTube": {"salary": 10, "gladness_more": +50},
                         "wollking": {"gladness_more": 100}}
+
+        class academi:
+            def __init__(self,academi_list):
+                self.job = (list(academi_list))
+                self.salary = academi_list[self.job]["salary"]
+                self.gladnes_less = academi_list[self.job]["gladness_less"]
+
+            academi_list = {
+                "p": {"salary": 50, "gladness_more": +1},
+                "phyton": {"salary": 40, "gladness_more": +1},
+                "cobaka phyton": {"salary": 45, "gladness_more": +10000000000000000000000000000000000},
+                "cobaka c++": {"salary": 70, "gladness_less": +10000000000000000000000000000000000000000000000000000}}
+
+        class parents:
+            def __init__(self, parents_list):
+                self.job = (list(parents_list))
+                self.salary = parents_list[self.job]["salary"]
+                self.gladnes_less = parents_list[self.job]["gladness_less"]
+
+                self.have.good.rating
+                self.batiku_love += 110
+                self.have.bad.rating
+                self.batiku_love = 100
+                if self.batiku.love:
+                    self.have.money = 80
+
+            academi_list = {
+                "p": {"salary": 50, "gladness_more": +1},
+                "phyton": {"salary": 40, "gladness_more": +1},
+                "cobaka phyton": {"salary": 45, "gladness_more": +10000000000000000000000000000000000},
+                "cobaka c++": {"salary": 70, "gladness_less": +10000000000000000000000000000000000000000000000000000}}
+
+
+
+            print("поставте 12 будь ласка")
