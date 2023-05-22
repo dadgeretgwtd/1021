@@ -157,10 +157,10 @@ def is_alive(self):
                 "cobaka c++": {"salary": 70, "gladness_less": +10000000000000000000000000000000000000000000000000000}}
 
         class parents:
-            def __init__(self, parents_list):
-                self.job = (list(parents_list))
-                self.salary = parents_list[self.job]["salary"]
-                self.gladnes_less = parents_list[self.job]["gladness_less"]
+            def __init__(self, job_list):
+                self.job = (list(job_list))
+                self.salary = job_list[self.job]["salary"]
+                self.gladnes_less = job_list[self.job]["gladness_less"]
 
                 self.have.good.rating
                 self.batiku_love += 110
@@ -168,12 +168,14 @@ def is_alive(self):
                 self.batiku_love = 100
                 if self.batiku.love:
                     self.have.money = 80
+            job_list = {
+                "job": {"salary": 50, "gladness_more": -50},
+                "chill": {"salary": +40, "gladness_more": +100}}
 
-            academi_list = {
-                "p": {"salary": 50, "gladness_more": +1},
-                "phyton": {"salary": 40, "gladness_more": +1},
-                "cobaka phyton": {"salary": 45, "gladness_more": +10000000000000000000000000000000000},
-                "cobaka c++": {"salary": 70, "gladness_less": +10000000000000000000000000000000000000000000000000000}}
+           Dany = Human(name="cawa")
+            for day in range(1, 8)
+                if Dany.live(day) == False:
+                    break
 
 
 
